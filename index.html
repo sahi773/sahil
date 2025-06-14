@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Camera Access App</title>
+  <style>
+    video { width: 300px; height: 200px; border: 1px solid #000; }
+  </style>
+</head>
+<body>
+  <h1>Camera Access App</h1>
+  <video id="localVideo" autoplay playsinline></video>
+  <video id="remoteVideo" autoplay playsinline></video>
+  <button onclick="start()">Start Camera</button>
+  <button onclick="shareLink()">Share Link</button>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="camera.js"></script>
+</body>
+</html>
